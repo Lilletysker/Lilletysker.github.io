@@ -5,8 +5,7 @@
 			<link rel="icon" href="https://cdn1.iconfinder.com/data/icons/rounded-flat-country-flag-collection-1/2000/de-01.png">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 			<link rel="stylesheet" href="styles/main.css">
-			<link rel="stylesheet" href="styles/bootstrap.css">
-			<link rel="stylesheet" href="styles/bootstrap-responsive.css">
+			<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 			<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 			<meta charset="utf-8">
 		</head>
@@ -16,47 +15,53 @@
    	 	<div class="progress-bar" id="myBar"></div>
  	 	</div>
 	</div>
+	<header>
 
 			<div class="img-slides">
 				<img class="mySlides w3-animate-fading" src="images/7.JPG" style="width:100%; max-width: 100%; height: auto;">
-				 <img class="mySlides w3-animate-fading" src="images/2.JPG" style="width:100%; max-width: 100%;">
+				 <img class="mySlides w3-animate-fading" src="images/2.JPG" style="width:100%; max-width: 100%; height: auto;">
 			 	  <img class="mySlides w3-animate-fading" src="images/3.JPG" style="width:100%; max-width: 100%; height: auto;">
 			 	   <img class="mySlides w3-animate-fading" src="images/4.JPG" style="width:100%; max-width: 100%; height: auto;">
-					<img class="mySlides w3-animate-fading" src="images/5.JPG" style="width:100%; max-width: 100%; height: auto;">
-			   		 <img class="mySlides w3-animate-fading" src="images/10.JPG" style="width:100%; max-width: 100%; height: auto;">
-			   	 	  <img class="mySlides w3-animate-fading" src="images/6.JPG" style="width:100%; max-width: 100%; height: auto;">
-			    	   <img class="mySlides w3-animate-fading" src="images/8.JPG" style="width:100%; max-width: 100%; height: auto;">
+				   <img class="mySlides w3-animate-fading" src="images/5.JPG" style="width:100%; max-width: 100%; height: auto;">
+			   	  <img class="mySlides w3-animate-fading" src="images/10.JPG" style="width:100%; max-width: 100%; height: auto;">
+			   	 <img class="mySlides w3-animate-fading" src="images/6.JPG" style="width:100%; max-width: 100%; height: auto;">
+			    <img class="mySlides w3-animate-fading" src="images/8.JPG" style="width:100%; max-width: 100%; height: auto;">
 			</div>
-
-			<ol class="breadcrumb img-text-menu">
-				  <li class="active">Hjem</li>
-				  <li><a href="#">Fotos</a></li>
-				  <li><a href="Schickel.html">Schickel</a></li>
-				</ol>		
-			<div class="jumbotron img-text-center"><!DOCTYPE html>
+		
+			<div class="img-text-center">
 				<div class="start-tekst">
 			 	 <h1>Marius i Tyskland!</h1>			  	
 			 	 <p>2018/19</p>
-
-
-
 				</div>
 				<br>
-
-			  <p><a class="btn btn-info btn-lg" onclick="topFunction()" role="button">Lær mere</a></p> 
+				<p><a class="knap" onclick="topFunction()" role="button">Lær mere</a></p>
 			</div>
+</header>
 
-			<p></p>
+
+
+		<ul>
+  <li><a href="#" onclick="topFunctionn()" role="button">Hjem</a></li>
+  <li><a href="#news">Virtuel virkelighed</a></li>
+  <li class="dropdown">
+    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+    <div class="dropdown-content">
+      <a href="#">Link 1</a>
+      <a href="#">Link 2</a>
+      <a href="#">Link 3</a>
+    </div>
+  </li>
+</ul>
 			
 			<div class="clearfix">
-		 		<img class="img-left img-circle imgmig" src="images/mig.jpg" style="width:18%; max-width: 100%; height: auto;">
+		 		<img class="img-left imgmig" src="images/mig.jpg" style="width:18%; max-width: 100%; height: auto;">
 		 				<div> 
 	 					
 							<br><br><br>
-							Hej og velkommen til min nye blog. Det meste kommer til at være<br>meget lig det gamle.<br>
+							Hej og velkommen til den helt nye og opdaterede blog. Jeg har redesignet den <br>helt fra bund til top, men det meste kommer stadig til at være meget lig det gamle.<br>
 							Men bare med et pænere layout og måske en lidt behageligere læseoplevelse.<br>
-							Som du kan se har jeg også lavet domænet(navnet på min blog) om.<br>
-							Nu er det jo "anden del" af min rejse (en ny begyndelse)<br>
+							Men den er desværre stadig ikke helt "mobil-venlig" endnu.<br>
+							Så jeg råder dig stærkt til at læse på en computer.<br>
 							Giv lige besked og sig hvad du mener samt feedback
 						</div>
 		</div>	
@@ -108,6 +113,12 @@ function topFunction() {
     document.body.scrollTop = 1450;
     document.documentElement.scrollTop = 1450;
 }
+
+function topFunctionn() {
+    document.body.scrollTop = 0;
+    document.documentElement.scrollTop = 0;
+}
+
 </script>
 
 <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>

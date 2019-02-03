@@ -52,8 +52,8 @@ body {
 div h1 {
   margin: 10px;
   font-family: inherit;
-  font-weight: 1000px;
-  line-height: 20px;
+  line-height: 100%;
+  font-size: 200%;
   color: inherit;
   text-rendering: optimizelegibility;
 }
@@ -70,10 +70,10 @@ div p {
 .knap
 {
   display: block;
-  font-size: 1.1em;
+  font-size: 100%;
   font-weight: bold;
   text-transform: uppercase;
-  padding: 8px 1px;
+  padding: 3% 1%;
   margin: 20px auto;
   color: #ccc;
   background-color: #555;
@@ -212,9 +212,19 @@ li.dropdown {
     display: block;
 }
 
+.biografi {
+  font-size: 80%;
+  text-align: justify;
+  margin-right: 20%
+}
+
 footer {
       background-color: #555;
       color: white;
-      padding: 10px;
-      margin: 10% 0% 0% 0%;
+      padding: 6px;
+      margin: 6% 0% 0% 0%;
     }
+
+footer p{
+  font-size: 70%
+}

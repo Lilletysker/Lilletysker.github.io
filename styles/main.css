@@ -29,6 +29,17 @@ div span {
   margin: 20%;
 }
 
+div span:hover {
+  color: #420;
+  outline-width: 8px;
+  outline-style: double;
+}
+
+div span:active {
+  outline-width: 5px;
+  outline-style: double;
+}
+
 .header {
   top: 0;
   z-index: 1;
@@ -207,24 +218,53 @@ div p {
     font-family: 'Lato', sans-serif;
 }
 
-.clearfiximg {
-    overflow: auto;
-}
-
 .imgmig {
   width: 18%;
   float: left;
-  clear: both;
   max-width: 100%;
   height: auto;
   display: inline;
-  margin: 0% 3% 0% 0%;
+  margin: 0% 3% 20% 0%;
     -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
 }
 
-.imgmåned {
+}
+
+.clearfiximg {
+  position: relative;
+  
+  border: 1px solid #333;
+  margin: 2%;
+  overflow: hidden;
+  width: 540px;
+}
+.clearfiximg img {
+  max-width: 100%;
+  
+  -moz-transition: all 0.3s;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+.clearfiximg:hover img {
+  -moz-transform: scale(1.1);
+  -webkit-transform: scale(1.1);
+  transform: scale(1.1);
+}
+
+.clearfiximg {
+  overflow: auto;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+
+
+
+
+.måned {
 margin: 0.5%;
 margin-bottom: 1%;
 width: 33.33%;
@@ -232,6 +272,7 @@ padding: 5px;
 border: 5px;
 border-radius: 10px;
 }  
+
 
 imgmåned {
   margin: 0.5%;
@@ -320,7 +361,7 @@ footer p{
 }
 
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
   .imgmig {
     display: block;
     margin-left: 10%;

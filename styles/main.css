@@ -232,28 +232,34 @@ div p {
 
 }
 
-.clearfiximg {
-  position: relative;
-  
+.måned {
+  position: relative;  
   border: 1px solid #333;
   margin: 2%;
   overflow: hidden;
   width: 540px;
 }
-.clearfiximg img {
-  max-width: 100%;
-  
+
+.måned img {
+  max-width: 100%;  
   -moz-transition: all 0.3s;
   -webkit-transition: all 0.3s;
   transition: all 0.3s;
 }
-.clearfiximg:hover img {
-  -moz-transform: scale(1.1);
-  -webkit-transform: scale(1.1);
-  transform: scale(1.1);
+
+.måned:hover img {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
 }
 
-.clearfiximg {
+img:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+}
+
+.måned {
   overflow: auto;
   position: relative;
   text-align: center;
@@ -308,32 +314,6 @@ li a:hover, .dropdown:hover .dropbtn {
     background-color: black;
 }
 
-li.dropdown {
-    display: inline-block;
-}
-
-.dropdown-content {
-    display: none;
-    position: absolute;
-    background-color: #f9f9f9;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
-}
-
-.dropdown-content a {
-    color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    text-align: left;
-}
-
-.dropdown-content a:hover {background-color: #f1f1f1}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
 
 .biografi {
   font-size: 80%;

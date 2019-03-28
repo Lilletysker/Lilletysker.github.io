@@ -213,9 +213,12 @@ div p {
 
 .imgmig {
   width: 18%;
+  float: left;
+  clear: both;
   max-width: 100%;
   height: auto;
-  margin: 0% 3% 3% 0%;
+  display: inline;
+  margin: 0% 3% 0% 0%;
     -webkit-border-radius: 500px;
      -moz-border-radius: 500px;
           border-radius: 500px;
@@ -317,11 +320,12 @@ footer p{
 }
 
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
   .imgmig {
     display: block;
     margin-left: 10%;
     margin-right: 10%;
+    margin-bottom: 2%;
     width: 70%;
 
     -webkit-border-radius: 100px;

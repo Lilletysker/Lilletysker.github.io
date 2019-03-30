@@ -6,6 +6,8 @@ html {
 body {
   font-family: 'Lato', sans-serif;
   margin: 0%;
+  /* Never get smaller than this */
+  font-size: 14px;
 }
 
 .background {
@@ -18,11 +20,35 @@ body {
 
 main {
   background-color: #fffced;
-  margin: 0.55% 20% 5% 20%;
+  margin: 0.55% 25% 5% 25%;
   position: relative;
   border-radius: 0.5%;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
   text-align: center;
+  float: none;
+}
+
+.blog {
+  text-align: justify;
+}
+
+.blog h1 {
+  font-family: 'Anton', sans-serif;
+  text-decoration: overline;
+  padding: 3% 0% 0% 1%;
+  margin-top: 0.5%;
+
+}
+
+.blog h2 {
+  font-family: 'Pacifico', cursive;
+    padding: 1% 0% 0% 5%;
+}
+
+.blog p {
+  font-family: 'Lato', sans-serif;
+  margin: 0% 18%;
+  padding-top: 4%;
 }
 
 div span {
@@ -230,62 +256,56 @@ div p {
           border-radius: 500px;
 }
 
-}
 
-.måned {
-  position: relative;  
-  border: 1px solid #333;
-  margin: 2%;
-  overflow: hidden;
-  width: 540px;
-}
 
-.måned img {
-  max-width: 100%;  
-  -moz-transition: all 0.3s;
-  -webkit-transition: all 0.3s;
-  transition: all 0.3s;
-}
-
-.måned:hover img {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-img:hover {
-  -moz-transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  transform: scale(1.2);
-}
-
-.måned {
-  overflow: auto;
+.img__wrap {
   position: relative;
-  text-align: center;
-  color: white;
+  width: auto;
+  height: auto;
+
+  
 }
 
+.img__description {
+  position: absolute;
+  top: 40%;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  color: #fff;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
+  visibility: hidden;
+  opacity: 0;
+  text-align: center;
+}
 
+.img__wrap:hover .img__description {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: none;
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  filter: drop-shadow(8px 8px 10px gray);
+}
 
-
+.img__wrap:active .img__description {
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  filter: none;
+}
 
 .måned {
 margin: 0.5%;
 margin-bottom: 1%;
-width: 33.33%;
 padding: 5px;
+width: auto;
 border: 5px;
 border-radius: 10px;
 }  
 
-
-imgmåned {
-  margin: 0.5%;
-  margin-bottom: 1%;
-  border: 5px;
-  border-radius: 10px;
-}
 
 ul {
     list-style-type: none;
@@ -323,6 +343,75 @@ li a:hover, .dropdown:hover .dropbtn {
 
 
 
+.sidenav {
+  height: 90%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.55s;
+  padding-top: 60px;
+  margin-top: 1%;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #818181;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+.sidenav2 {
+  height: 90%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  transition: 0.7s;
+  padding-top: 60px;
+  margin-top: 10%;
+  margin-left: 20px;
+  border-radius: 10px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .sidenav2 {padding-top: 15px;}
+  .sidenav2 a {font-size: 18px;}
+}
+
+@media only screen and (max-width: 850px) {
+  .sidenav2 {
+    width: 90%;
+    text-align: center;
+    margin-top: 5%;
+    margin-left: 5%;
+  }
+}
+
+
+
+
 .greybg {
   padding: 1px;
   background-color: #fffced;
@@ -341,16 +430,65 @@ footer p{
 }
 
 
+
+@media (min-width:600px) {
+
+  main {
+    margin: 0.35% 6% 3% 6%;
+  }
+
+  body {
+    font-size: 16px;
+  }
+}
+
+
+
+@media (min-width:800px) {
+
+  main {
+    margin: 0.40% 12% 4% 12%;
+  }
+
+  body {
+    font-size: 18px;
+  }
+}
+
+
+
+
+@media (min-width:1000px) {
+
+  main {
+    margin: 0.50% 15% 4% 15%;
+  }
+
+  body {
+    /* Never get larger than this */
+    font-size: 20px;
+  }
+}
+
 @media only screen and (max-width: 1200px) {
+  main {
+    margin: 0.55% 18% 5% 18%;
+  }
+
   .imgmig {
     display: block;
     margin-left: 10%;
     margin-right: 10%;
     margin-bottom: 2%;
     width: 70%;
-
     -webkit-border-radius: 100px;
     -moz-border-radius: 100px;
     border-radius: 100px;
   }
+
+  .img__description {
+    opacity: 1;
+    visibility: visible;
+  }
+
 }

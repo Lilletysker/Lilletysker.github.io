@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+      <title>Tidslinje</title>
+      <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/rounded-flat-country-flag-collection-1/2000/de-01.png">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+      <link rel="stylesheet" href="styles/main.css">
+      <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+      <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+      <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="
+      sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+      <meta charset="utf-8">
+
+      <style>
+body {
+  font-family: "Lato", sans-serif;
+}
+
+img:hover {
+  -moz-transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  transform: scale(1.2);
+  filter: blur(0.6px) drop-shadow(8px 8px 10px gray);
+}
+
+img:active {
+  -moz-transform: scale(0.9);
+  -webkit-transform: scale(0.9);
+  transform: scale(0.9);
+  filter: none;
+}
+
+
+</style>
+</head>
+
+
+<body>
+<div class="background">
+
+    <div class="header">
+      <div class="progress-container">
+      <div class="progress-bar" id="myBar"></div>
+    </div>
+  </div>
+
+<div id="mySidenav" class="sidenav">
+  <a href="javascript:void(0)" class="closebtn" onclick="menu()">&times;</a>
+  <a href="index.html"><i class="fa fa-home"></i> Hjem</li></a>
+  <a href="måneder.html"><i class="fa fa-calendar"></i> Kalender</a>
+  <a href="#">????</a>
+  <a href="#">????</a>
+</div>
+
+
+<br><br><br>
+<div>
+  <span style="font-size:30px;cursor:pointer" onclick="menu()">&#9776;Menu</span>
+</div>
+
+<main> 
+       
+                 <br><br>
+    <div class="img__wrap">
+      <a href="#"><img class="måned" src="images/august.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+      <p class="img__description">august</p>
+    </div> 
+      <div class="img__wrap">
+        <a href="#"><img class="måned" src="images/september.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+        <p class="img__description">september</p>
+       </div> 
+        <div class="img__wrap">
+          <a href="#"><img class="måned" src="images/oktober.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+          <p class="img__description">oktober</p>
+         </div>
+          <div class="img__wrap">
+            <a href="#"><img class="måned" src="images/november.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+            <p class="img__description">november</p>
+          </div>
+            <div class="img__wrap">
+              <a href="#"><img class="måned" src="images/december.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+              <p class="img__description">december</p>
+            </div>
+              <div class="img__wrap">
+                <a href="#"><img class="måned" src="images/januar.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+                <p class="img__description">januar</p>
+              </div>
+                <div class="img__wrap">
+                  <a href="#"><img class="måned" src="images/feburar.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+                  <p class="img__description">februar</p>
+                </div>
+                  <div class="img__wrap">
+                    <a href="marts.html"><img class="måned" src="images/march.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+                    <p class="img__description">marts</p>
+                  </div>
+                    <div class="img__wrap">
+                      <a href="#"><img class="måned" src="images/april.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+                      <p class="img__description">april</p>
+                    </div>
+                      <div class="img__wrap">
+                        <a href="#"><img class="måned" src="images/maj.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+                        <p class="img__description">maj</p>
+                      </div>
+                        <div class="img__wrap">
+                         <a href="#"><img class="måned" src="images/juni.jpg" style= "width:250px; max-width: 90%; height: 150px;"></a>
+                         <p class="img__description">juni</p> 
+                        </div>
+
+<div>
+  <p><br>Goddag</p>
+</div>
+
+
+
+
+  
+</main>
+
+</div>
+<footer class="container-fluid">
+  <p>Marius i Tyskland</p>
+  <p style="color: #C0C0C0;"><em>© 2019 Marius Kieldsen Alle Rechte vorbehalten</em></p>
+
+</footer>
+
+
+<script>
+// When the user scrolls the page, execute myFunction
+window.onscroll = function() {myFunction()};
+
+function myFunction() {
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 90;
+  document.getElementById("myBar").style.width = scrolled + "%";
+} 
+</script>
+
+<script>
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+function menu() {
+  var element = document.getElementById("mySidenav");
+  element.classList.toggle("sidenav2");
+}
+
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+</script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -28,7 +28,7 @@ main {
 }
 
 .blog {
-  text-align: justify;
+  text-align: left;
 }
 
 .blog h1 {
@@ -50,17 +50,17 @@ main {
   padding-top: 4%;
 }
 
-div span {
+.menuikon span {
   margin: 20%;
 }
 
-div span:hover {
+.menuikon span:hover {
   color: #420;
   outline-width: 8px;
   outline-style: double;
 }
 
-div span:active {
+.menuikon span:active {
   outline-width: 5px;
   outline-style: double;
 }
@@ -120,6 +120,73 @@ div p {
   line-height: 25px;
   color: inherit;
   text-rendering: optimizelegibility;
+}
+
+
+.knap4
+{
+  display: block;
+  font-size: 90%;
+  font-weight: bold;
+  text-transform: uppercase;
+  padding: 1% 5%;
+  margin: auto;
+  text-align: center;
+  color: #ccc;
+  background-color: #555;
+  background: -webkit-linear-gradient(#888, #555);
+  background: linear-gradient(#888, #555);
+  border: 0 none;
+  border-radius: 3px;
+  text-shadow: 0 -1px 0 #000;
+  box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+  cursor: pointer;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.knap4:hover, .knap4:focus
+{
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+
+
+.knap3
+{
+  display: block;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  padding: 0.001px;
+  color: white ;
+  background-color: #42f498;
+  background: -webkit-linear-gradient(#84f907, #80892d);
+  background: linear-gradient(#84f907, #80892d);
+  border: 1 none;
+  border-radius: 3px;
+  text-shadow: 0 -1px 0 #000;
+  box-shadow: 0 1px 0 #666, 0 5px 0 #444, 0 6px 6px rgba(0,0,0,0.6);
+  cursor: pointer;
+  -webkit-transition: all 150ms ease;
+  transition: all 150ms ease;
+}
+
+.knap3:hover, .knap3:focus
+{
+  -webkit-animation: pulsate 1.2s linear infinite;
+  animation: pulsate 1.2s linear infinite;
+}
+
+.knap3:active
+{
+  color: #fff;
+  text-shadow: 0 -1px 0 #444, 0 0 5px #ffd, 0 0 8px #fff;
+  box-shadow: 0 1px 0 #666, 0 2px 0 #444, 0 2px 2px rgba(0,0,0,0.9);
+  -webkit-transform: translateY(3px);
+  transform: translateY(3px);
+  -webkit-animation: none;
+  animation: none;
 }
 
 .knap2
@@ -335,10 +402,17 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 
+
 .biografi {
   font-size: 80%;
   text-align: justify;
   margin-right: 20%
+}
+
+
+
+.content {
+  display:  none;
 }
 
 
@@ -395,6 +469,14 @@ li a:hover, .dropdown:hover .dropbtn {
 }
 
 
+.sexy_line { 
+    margin: 25px 0;
+    height: 1px;
+    background: black;
+    background: -webkit-gradient(linear, 0 0, 100% 0, from(white), to(white), color-stop(50%, black));
+}
+
+
 @media screen and (max-height: 450px) {
   .sidenav2 {padding-top: 15px;}
   .sidenav2 a {font-size: 18px;}
@@ -408,9 +490,6 @@ li a:hover, .dropdown:hover .dropbtn {
     margin-left: 5%;
   }
 }
-
-
-
 
 .greybg {
   padding: 1px;
@@ -457,7 +536,7 @@ footer p{
   main {
   margin: 0.30% 10% 5% 10%;
  }
- div span {
+ .menuikon span {
   margin: 10%;
  }
      .blog h1 {
@@ -471,7 +550,7 @@ footer p{
   main {
   margin: 1%;
  }
- div span {
+ .menuikon span {
   margin: 1% 1% 5% 1%;
  }
  .blog p {

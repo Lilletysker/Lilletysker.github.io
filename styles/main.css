@@ -382,7 +382,9 @@ border-radius: 10px;
 
 
 ul {
-    
+    list-style-type: none;
+    margin: 0%;
+    overflow: hidden;
     background-color: #333;
     position: -webkit-sticky; /* Safari */
     position: sticky;
@@ -391,13 +393,14 @@ ul {
 
 li {
     float: left;
+    margin: 0%;
 }
 
 li a, .dropbtn {
     display: inline-block;
     color: white;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 36px;
     text-decoration: none;
 }
 
@@ -532,7 +535,7 @@ footer p{
 
   body {
     /* Never get larger than this */
-    font-size: 20px;
+    font-size: 33.33px;
   }
 }
 
@@ -540,6 +543,15 @@ footer p{
   main {
   margin: 0.30% 10% 5% 10%;
  }
+
+ li {
+  width: 33%;
+ }
+
+li a {
+  padding: 14px 16px;
+}
+
  .menuikon span {
   margin: 10%;
  }
@@ -549,6 +561,7 @@ footer p{
     }
 }
 
+
 /* On screens that are 600px wide or less, the background color is olive */
 @media screen and (max-width: 600px) {
   main {
@@ -557,6 +570,16 @@ footer p{
  .menuikon span {
   margin: 1% 1% 5% 1%;
  }
+
+ li {
+  font-size: .86em;
+  width: 33.3333334%;
+ }
+
+ li a {
+  padding: 14px 16px;
+ }
+
  .blog p {
       margin: 6vw;
       line-height: 4vw;

@@ -50,6 +50,24 @@ main {
   padding-top: 4%;
 }
 
+
+.spoiler {
+  background-color: black;
+  border-radius: 5%;
+  border: 2px;
+}
+summary {
+  font-size: 100%;
+}
+
+summary:hover {
+  font-size: 90%;
+}
+
+.spoiler:hover {
+  background-color: gray;
+}
+
 .menuikon span {
   margin: 20%;
 }
@@ -63,6 +81,11 @@ main {
 .menuikon span:active {
   outline-width: 5px;
   outline-style: double;
+}
+
+.gray {
+  color: gray;
+  font-size: 50%;
 }
 
 .header {
@@ -304,6 +327,12 @@ div p {
 
 .img-left {
   float: left;
+  margin: .7%;
+}
+
+.img-right {
+  float: right;
+  margin: .7%;
 }
 
 

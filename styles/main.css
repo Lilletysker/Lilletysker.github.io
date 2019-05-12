@@ -335,6 +335,13 @@ div p {
   margin: .7%;
 }
 
+.img-center {
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
 
 .col-right {
   font-family: sans-serif;

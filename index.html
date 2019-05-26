@@ -2,6 +2,9 @@
 <html>
 		<head>			
 			<title>Marius i Tyskland</title>
+			  <!-- Return to Top -->
+<a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
+
 			<link rel="icon" href="https://cdn1.iconfinder.com/data/icons/rounded-flat-country-flag-collection-1/2000/de-01.png">
 			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
   		    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="
@@ -17,6 +20,7 @@
   <li><a href="#" onclick="topFunctionn()" role="button"><i class="fa fa-home"></i> Hjem</a></li>
   <li><a href="måneder.html"><i class="fa fa-calendar"></i> Kalender</a></li>
   <li><a href="#" onclick="log()"><i class="far fa-newspaper"></i> LOG</li>
+  <li><a href="https://prindeon.github.io">Gammel hjemmeside</a></li>
 </ul>
 
 <div class="greybg">
@@ -27,6 +31,13 @@
  	 	</div>
 	</div>
 <header>
+
+
+<script>
+if (window.confirm('OBS: Jeg har tilføjet en "tilbage til toppen knap. Den bliver synlig nå du scroller lidt ned på siden. ned i højre hjørne på computer. I midten af bunden på mobil.'));
+</script>
+
+
 
 			<div class="img-slides">
 				<img class="mySlides w3-animate-fading" src="images/5.JPG" style="width:100%; max-width: 100%; height: auto;">
@@ -68,9 +79,14 @@
 							Jeg har ikke rigtigt pakket særlig mange nye funktioner i den udover en behageligere læseoplevelse<br> (fordi lad os indrømme det. Det gamle lignede noget skrammel)
 							<br><br>Men Marius! Kan man så godt læse på mobilen nu???<br>-Det kan jeg lige love dig du ka'. <br>Fordi jeg har nemlig svedt og grædt mange nætter i streg for at fjerne fejl efter fejl. Men ja, nu kan du "delvist" "til en hvis grad" læse "behageligt" på mobilen..<br>
 							Den grønne knap "LÆS" som du så før, fører dig direkte til det seneste indslag.<br>
-							Men for at komme til kalenderen, tryk oppe i ventre hjørne.
+							Men for at komme til kalenderen, tryk oppe i ventre hjørne. <br>Eller tryk læs herunder.
 						</div>
 
+						<div class="img-center">
+							<div>
+								<p><a class="knap2" href="maj.html" role="button"><i class="fab fa-readme"></i> Læs</a></p>
+							</div>
+						</div>
 			</div>	
 
 
@@ -87,7 +103,7 @@
 
 <script>
 	function log(onclick) {
-		alert("\n*1.1: Optimering af forside-layout både på mobil og computer.(April 02, 15:39)\n*1.0: Hjemmeside er live!(March 31, 8:49)")
+		alert("\n*1.3: Back to top-knap.(Maj 26, 21.23)\n*1.1: Optimering af forside-layout både på mobil og computer.(April 02, 15:39)\n*1.0: Hjemmeside er live!(March 31, 8:49)")
 	}
 
 </script>
@@ -119,7 +135,21 @@ function carousel() {
     setTimeout(carousel, 9000);    }
 </script>
 
-	
+	<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(500);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(500);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 50);
+});
+</script>
 
 <script>
 

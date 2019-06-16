@@ -2,6 +2,7 @@
 <html>
 <head>
 	<title>Juni</title>
+  <a href="javascript:" id="return-to-top"><i class="fas fa-arrow-up"></i></a>
 	<script src="https://fastcdn.org/Readmore.js/2.1.0/readmore.min.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <link rel="icon" href="https://cdn1.iconfinder.com/data/icons/rounded-flat-country-flag-collection-1/2000/de-01.png">
@@ -48,8 +49,20 @@ body {
 
 <div class="blog">
   <h1>Juni</h1>
-    <h2>...</h2>
-        <p>...</p>
+    <h2>10. juni - 16. juni.</h2>
+    <p><em>(Ord: 240)</em><br><br><br>
+        2 uger... 14 dage. <br><br>Jeg har ikke rigtigt lavet noget i sidste uge, udover Kirmes, som jeg allerede har skrevet om. I weekenden, var der Smugglerfest i Walbeck. <br>For mange år siden, blev der smuglet meget tobak over grænsen, fordi det var for dyrt at købe i Tyskland.(tror jeg) Det er så det, som folk fejrer hvert andet år i Walbeck. <br><br>Der var jeg henne lørdag aften med nogle fra klassen, men det var så kedeligt, at vi bare tog et andet sted hen; der var nemlig kun gamle mennesker som stod og snakkede... Der skete intet. Så vi tog i stedet ud til det stykke vand der ligger mellem Tyskland og Holland i stedet. <br><br>I søndags var der også noget i Walbeck, men det var ikke så stort. Der var bare forskellige musikstykker, og folk som kom og spillede noget forskelligt musik. Om aftenen ved 6-tiden, tog vi derhen igen, fordi man begge dage, kunne købe sådan nogle lodder, hvor der så blev trukket nogle numre op af en kasse, hvor man så kunne vinde forskellige priser, såsom en grill, resje-gavekort ekker enda et 55" fladskærmstv. <br>Vi vandt desværre ikke noget.<br><br>Og så i morgen. Mandag, 17. 06, har jeg føzz-dag. Det glæder jeg mig til, der laver Edeltraut en af de gode frugt-lagkager, af egen opskrift. De er mega lækre.
+          
+        <br><br><br>Husk at blive ved med at svare på spørgeskemaet herunder, hver gang du er inde på hjemmesiden. :)
+        </p>
+
+
+<br><br><br>
+  <div class="img-center">
+
+    <form method="post" action="https://poll.pollcode.com/39639646"><div style="background-color:#BAB3FF;padding:2px;width:254px;font-family:Arial;font-size:small;color:#000000;box-shadow: 0px 0px 5px #888;"><div style="padding:2px 0px 4px 2px;"><strong>Hvilken enhed bruger du lige nu?</strong></div><input type="radio" name="answer" value="1" id="answer396396461" style="float:left;" /><label for="answer396396461" style="float:left;width:229px;">Computer</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="2" id="answer396396462" style="float:left;" /><label for="answer396396462" style="float:left;width:229px;">Mobil</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="3" id="answer396396463" style="float:left;" /><label for="answer396396463" style="float:left;width:229px;">Tablet</label><div style="clear:both;height:2px;"></div><input type="radio" name="answer" value="4" id="answer396396464" style="float:left;" /><label for="answer396396464" style="float:left;width:229px;">Andet</label><div style="clear:both;height:2px;"></div><div align="center" style="padding:3px;"><input type="submit" value=" Vote "></div><div align="right" style="font-size:10px"></div></div></form>
+ 
+  </div>
 
                       <br>
 
@@ -59,8 +72,10 @@ body {
   
       <h2></h2> 
   <div class="content"> <br><br>
-      <h2></h2>
-          <p></p>
+      <h2>3. juni - 09. juni.</h2>
+        <p><em>(Ord: 234)</em><br><br><br>
+          Uge 4 før hjemrejse, er nu officielt forbi.<br><br>I tirsdags, begyndte <em>de</em>, at gøre klar til Kirmes, som skulle stå færdig fredag aften. <br>Lige lidt baggrundsinfo: Hvert år til pinse, kommer folk fra nær og fjern til Geldern, for enten at stille boder op og sælge ting, eller bare for at komme, kigge og prøve forlystelser. Jeg må faktisk sige, at jeg er ret imponeret over hvor produktive de er, når det gælder om, at bygge og sætte ting op. <br>De første stande blev nok først sat op onsdag eftermiddag, og 2 dage senere, stod alt klar til Kirmes. <br><br>Jeg lå desværre syg det meste af weekenden, så der kom jeg ikke på Kirmes. I mandags tog jeg sammen med Mathias fra bordtennis ind for at se hvad der skete i Geldern. Vi gik bare lidt rundt og kiggede, for så derefter at gå hjem til ham igen. Senere, da jeg skulle cykle hjem, begyndte det at regne og tordne kraftigt, så jeg spiste aftensmad hos dem, og blev så kørt hjem af hans far derefter. <br><br>I tirsdags var jeg til Kirmes igen, denne gang sammen med Felix fra klassen. Der tænkte jeg, at nu ville jeg have den fulde Kirmes oplevelse; derfor prøvede vi flere forskellige boder, spiste Currywurst, og fik Crepes med banan og nutela. yuum.
+        Jeg blev kørt derhen af Edeltraut, og cyklede så med min cykel hjem senere på aftenen.</p>
 
   <br>
           <div class="sexy_line"></div>
@@ -119,6 +134,24 @@ function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
 </script>
+
+
+<script>
+// ===== Scroll to Top ==== 
+$(window).scroll(function() {
+    if ($(this).scrollTop() >= 500) {        // If page is scrolled more than 50px
+        $('#return-to-top').fadeIn(500);    // Fade in the arrow
+    } else {
+        $('#return-to-top').fadeOut(500);   // Else fade out the arrow
+    }
+});
+$('#return-to-top').click(function() {      // When arrow is clicked
+    $('body,html').animate({
+        scrollTop : 0                       // Scroll to top of body
+    }, 50);
+});
+</script>
+
 
 
 <script>
